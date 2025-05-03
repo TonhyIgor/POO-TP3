@@ -1,11 +1,8 @@
 package oop2.tp3.ejercicio3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class EjemploDeUsoDelReporte {
     public static void main(String[] args) {
-        List<Gasto> gastos = new ArrayList<>();
+/*        List<Gasto> gastos = new ArrayList<>();
         var g1 = new Gasto(TipoDeGasto.DESAYUNO, 1000);
         gastos.add(g1);
 
@@ -14,6 +11,6 @@ public class EjemploDeUsoDelReporte {
 
         var reporte = new ReporteDeGastos(gastos);
         String cadena = reporte.imprimir(List.of(g1, g2));
-        System.out.println(cadena);
+        System.out.println(cadena);*/
     }
 }

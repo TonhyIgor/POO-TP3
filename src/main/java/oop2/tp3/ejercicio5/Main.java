@@ -1,10 +1,8 @@
 package oop2.tp3.ejercicio5;
 
-import java.util.List;
-
 public class Main {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         var eventos = cargarEventos();
         var factura = crearFactura();
 
@@ -24,5 +22,5 @@ public class Main {
         return new Factura("c1", List.of(new Actuacion("Escuela de Rock", 158),
                 new Actuacion("Hamlet", 103),
                 new Actuacion("El Perfume", 8)));
-    }
+    }*/
 }

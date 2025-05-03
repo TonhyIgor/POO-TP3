@@ -1,21 +1,20 @@
 package oop2.tp3.ejercicio5;
 
-import java.util.List;
-
 public class Calculador {
 
-    public String reporte(Factura factura, List<Evento> eventos) {
+    public String reporte(Factura factura) {
         float totalAmount = 0;
         float creditos = 0;
         var result = "Facturación para " + factura.nombreCliente() + System.lineSeparator();
         var actuaciones = factura.actuaciones();
         for (var actuacion : actuaciones) {
             float monto = 0;
-            var tipo = eventos.stream()
+            //se elimina porque no se usa mas
+            /*var tipo = eventos.stream()
                     .filter(e -> e.nombreEvento().equals(actuacion.nombreEvento()))
                     .findFirst()
                     .orElseThrow(() -> new RuntimeException("Evento no encontrado"))
-                    .tipo();
+                    .tipo();*/
 
             /*switch (tipo) {
                 case "Drama":
@@ -35,13 +34,16 @@ public class Calculador {
                     throw new RuntimeException("Tipo de evento no conocido");
             }*/
 
-
-            // creditos a ganar
+/*            // creditos a ganar
             creditos += Math.max(actuacion.numeroEspectadores() - 30, 0);
             // creditos extras para comedia
             if ("Comedia".equals(tipo)) {
                 creditos += Math.floor(actuacion.numeroEspectadores() / 5);
-            }
+            }*/
+
+            monto += actuacion.calcularMonto();
+            creditos += actuacion.calcularCreditos();
+
             result += actuacion.nombreEvento() + ": " + monto + ". Asientos: " + actuacion.numeroEspectadores()
                     + System.lineSeparator();//` ${play.name}: ${format(thisAmount/100)} (${perf.audience} seats)\n`;
             totalAmount += monto;

@@ -1,16 +1,22 @@
 package oop2.tp3.ejercicio5;
 
-public class Drama extends EventoNoRecord{
-    public Drama(String nombreEvento, String tipo) {
-        super(nombreEvento, tipo);
+public class Drama extends Actuacion {
+
+    public Drama(String nombreEvento, int numeroEspectadores) {
+        super(nombreEvento, numeroEspectadores);
     }
 
     @Override
-    public int calcularMonto(int numeroEspectadores) {
+    public int calcularMonto() {
         int monto = 40000;
-        if (numeroEspectadores > 30) {
-            return monto += 1000 * (numeroEspectadores - 30);
+        if (this.numeroEspectadores() > 30) {
+            return monto + 1000 * (this.numeroEspectadores() - 30);
         }
         return monto;
+    }
+
+    @Override
+    public float adicionalCreditos() {
+        return 0;
     }
 }

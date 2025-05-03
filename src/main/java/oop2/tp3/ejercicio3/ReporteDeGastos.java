@@ -15,7 +15,7 @@ public class ReporteDeGastos {
         int total = 0;
         int gastosDeComida = 0;
 
-        StringBuilder cadena =  new StringBuilder();
+        StringBuilder cadena = new StringBuilder();
 
         cadena.append("Expenses ").append(LocalDate.now()).append("\n");
 
@@ -25,7 +25,6 @@ public class ReporteDeGastos {
             }*/
             gastosDeComida += gasto.calcularGastoComida();
 
-            String nombreGasto = gasto.determinarTipoGasto();
             /*switch (gasto.tipoGasto) {
                 case CENA:
                     nombreGasto = "Cena";
@@ -39,13 +38,15 @@ public class ReporteDeGastos {
             }*/
 
 
-            String marcaExcesoComidas = gasto.excesoComida();
-//            String marcaExcesoComidas = gasto.tipoGasto == TipoDeGasto.CENA && gasto.monto > 5000
+            //            String marcaExcesoComidas = gasto.tipoGasto == TipoDeGasto.CENA && gasto.monto > 5000
 //                    || gasto.tipoGasto == TipoDeGasto.DESAYUNO && gasto.monto > 1000 ? "X" : " ";
 
-            cadena.append(nombreGasto).append("\t").append(gasto.getMonto()).append("\t").append(marcaExcesoComidas).append("\n");
+            cadena.append(gasto.determinarTipoGasto()).
+                    append("\t").append(gasto.monto()).
+                    append("\t").append(gasto.excesoComida() ? "X" : " ").
+                    append("\n");
 
-            total = gasto.sumarConMonto(total);
+            total += gasto.monto();
         }
 
         cadena.append("Gastos de comida: ").append(gastosDeComida).append("\n");

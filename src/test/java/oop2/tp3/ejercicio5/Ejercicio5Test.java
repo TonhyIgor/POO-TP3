@@ -12,7 +12,7 @@ public class Ejercicio5Test {
         var eventos = cargarEventos();
         var factura = crearFactura();
 
-        assertEquals(valorEsperado(), new Calculador().reporte(factura, eventos));
+        assertEquals(valorEsperado(), new Calculador().reporte(factura));
     }
 
     private List<Evento> cargarEventos() {
@@ -25,12 +25,12 @@ public class Ejercicio5Test {
     }
 
     private Factura crearFactura() {
-        return new Factura("c1", List.of(new Actuacion("Escuela de Rock", 158),
-                new Actuacion("Hamlet", 103),
-                new Actuacion("El Perfume", 8)));
+        return new Factura("c1", List.of(new Comedia("Escuela de Rock", 158),
+                new Drama("Hamlet", 103),
+                new Drama("El Perfume", 8)));
     }
 
-    private String valorEsperado(){
+    private String valorEsperado() {
         return "Facturación para c1\n" +
                 "Escuela de Rock: 156400.0. Asientos: 158\n" +
                 "Hamlet: 113000.0. Asientos: 103\n" +

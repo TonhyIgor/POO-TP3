@@ -2,8 +2,6 @@ package oop2.tp3.ejercicio4;
 
 import org.jdbi.v3.core.Jdbi;
 
-import java.util.Optional;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -21,15 +19,16 @@ public class Main {
             }
         }*/
 
-        for (Optional<Persona> persona : personas) {
-            System.out.println(persona.get().nombre() + " " + persona.get().apellido());
+        for (Persona persona : personas) {
+            System.out.println(persona.nombre() + " " + persona.apellido());
         }
 
-        var persona = repo.buscarId(789L);
+        var optionalPersona = repo.buscarId(789L);
         /*if (persona != null) {
             System.out.println(persona.nombre() + " " + persona.apellido());
         }*/
-        if (!persona.isEmpty())
-            System.out.println(persona.get().nombre() + " " + persona.get().apellido());
+
+        optionalPersona.ifPresent(persona -> System.out.println(persona.nombre()
+                + " " + persona.apellido()));
     }
 }

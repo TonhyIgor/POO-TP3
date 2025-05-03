@@ -4,33 +4,28 @@ enum TipoDeGasto {
     CENA, DESAYUNO, ALQUILER_AUTO
 }
 
-public class Gasto {
-    private TipoDeGasto tipoGasto;
+public abstract class Gasto {
+    private String nombre;
     private int monto;
 
-    public Gasto (TipoDeGasto tipoGasto, int monto) {
-        this.tipoGasto = tipoGasto;
+    public Gasto(String tipoGasto, int monto) {
+        this.nombre = tipoGasto;
         this.monto = monto;
     }
 
-
     int calcularGastoComida() {
-        return this.tipoGasto == TipoDeGasto.CENA || this.tipoGasto == TipoDeGasto.DESAYUNO ? this.monto : 0;
+        return 0;
     }
 
     String determinarTipoGasto() {
-        return this.tipoGasto.toString();
+        return this.nombre;
     }
 
-    String excesoComida() {
-        return this.tipoGasto == TipoDeGasto.CENA && this.monto > 5000 || this.tipoGasto == TipoDeGasto.DESAYUNO && this.monto > 1000 ? "X" : " ";
+    boolean excesoComida() {
+        return false;
     }
 
-    int getMonto() {
+    int monto() {
         return this.monto;
-    }
-
-    int sumarConMonto(int total) {
-        return this.monto += total;
     }
 }

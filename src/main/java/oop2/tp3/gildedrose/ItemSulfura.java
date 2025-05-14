@@ -1,13 +1,20 @@
 package oop2.tp3.gildedrose;
 
-public class ItemSulfura implements ManejoItems {
-    private Item[] items;
+public class ItemSulfura extends DefaultItem {
 
-    public ItemSulfura(Item[] items) {
-        this.items = items;
+    public ItemSulfura(String name, int sellIn, int quality) {
+        super(name, sellIn, quality);
     }
 
     @Override
-    public void actualizarItems() {
+    void actualizar(DefaultItem item) {
+    }
+
+    @Override
+    void actualizarArticulo(DefaultItem item) {
+    }
+
+    @Override
+    void actualizarArticuloExpirado(DefaultItem item) {
     }
 }

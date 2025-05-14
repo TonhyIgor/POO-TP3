@@ -1,15 +1,15 @@
 package oop2.tp3.gildedrose;
 
 class GildedRose {
-    private ManejoItems[] manejadorItems;
+    private DefaultItem[] items;
 
-    public GildedRose(ManejoItems[] manejadorItems) {
-        this.manejadorItems = manejadorItems;
+    public GildedRose(DefaultItem[] items) {
+        this.items = items;
     }
 
     public void updateQuality() {
-        for (ManejoItems manejador : manejadorItems) {
-            manejador.actualizarItems();
+        for (DefaultItem item : items) {
+            item.actualizar(item);
         }
     }
 }

@@ -9,20 +9,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Ejercicio5Test {
     @Test
     void test() {
-        var eventos = cargarEventos();
+        //var eventos = cargarEventos();
         var factura = crearFactura();
 
         assertEquals(valorEsperado(), new Calculador().reporte(factura));
     }
 
-    private List<Evento> cargarEventos() {
+/*    private List<Evento> cargarEventos() {
         return List.of(new Evento("Escuela de Rock", "Comedia"),
                 new Evento("Hamlet", "Drama"),
                 new Evento("El Avion", "Dram"),
                 new Evento("Cantando en la playa", "Comedia"),
                 new Evento("El Perfume", "Drama")
         );
-    }
+    }*/
 
     private Factura crearFactura() {
         return new Factura("c1", List.of(new Comedia("Escuela de Rock", 158),

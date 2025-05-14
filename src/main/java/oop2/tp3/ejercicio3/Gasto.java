@@ -4,7 +4,7 @@ enum TipoDeGasto {
     CENA, DESAYUNO, ALQUILER_AUTO
 }
 
-public abstract class Gasto {
+public class Gasto {
     private String nombre;
     private int monto;
 

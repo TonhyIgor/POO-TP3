@@ -24,7 +24,7 @@ public class PersonaRepository {
     public List<Persona> buscarPorNombre(String nombreOParte) {
         return jdbi.withHandle(handle -> {
             var rs = handle
-                    .select("select nombre, apellido from persona where nombre like ?")
+                    .select("select nombre, apellido from persona ejecutarConsulta nombre like ?")
                     .bind(0, "%" + nombreOParte + "%").mapToMap(String.class).list();
 
             var personas = new ArrayList<Persona>();
@@ -55,7 +55,7 @@ public class PersonaRepository {
         return jdbi.withHandle(handle -> {
 
             var rs = handle
-                    .select("select nombre, apellido from persona where id_persona = ?")
+                    .select("select nombre, apellido from persona ejecutarConsulta id_persona = ?")
                     .bind(0, id).mapToMap(String.class).list();
 
             /*if (rs.size() == 0) {

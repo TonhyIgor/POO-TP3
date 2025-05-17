@@ -1,12 +1,12 @@
 package oop2.tp3.ejercicio1;
 
-public class LibroNuevoLanzamiento extends Libro{
+public class LibroNuevoLanzamiento extends Libro {
 
     public static final int MINIMOS_DIAS_ALQUILADOS = 1;
     public static final int COEFICIENTE_COSTO = 3;
 
-    public LibroNuevoLanzamiento(String nombre, int priceCode) {
-        super(nombre, priceCode);
+    public LibroNuevoLanzamiento(String nombre) {
+        super(nombre);
     }
 
     @Override
@@ -16,7 +16,7 @@ public class LibroNuevoLanzamiento extends Libro{
     }
 
     @Override
-    public int sumarPuntosFrecuente(int diasAlquilados){
+    public int sumarPuntosFrecuente(int diasAlquilados) {
         return (diasAlquilados == MINIMOS_DIAS_ALQUILADOS) ? 1 : 0;
     }
 }

@@ -1,20 +1,16 @@
 package oop2.tp3.ejercicio3;
 
-public class Gasto {
-    private String nombre;
+public abstract class Gasto {
     private int monto;
 
-    public Gasto(String tipoGasto, int monto) {
-        this.nombre = tipoGasto;
+    public Gasto(int monto) {
         this.monto = monto;
     }
 
+    abstract String determinarTipoGasto();
+
     int calcularGastoComida() {
         return 0;
-    }
-
-    String determinarTipoGasto() {
-        return this.nombre;
     }
 
     boolean excesoComida() {

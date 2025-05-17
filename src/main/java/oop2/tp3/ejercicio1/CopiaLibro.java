@@ -7,10 +7,6 @@ public class CopiaLibro {
         this.libro = libro;
     }
 
-    public Libro libro() {
-        return libro;
-    }
-
     public double calcularCosto(int diasAlquilados, double monto) {
         return this.libro.calcularMonto(diasAlquilados, monto);
     }

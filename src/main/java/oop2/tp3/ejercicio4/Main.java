@@ -11,7 +11,7 @@ public class Main {
         new SetUpDatabase(jdbi).setUp();
 
         var repo = new PersonaRepository(jdbi);
-        var personas = repo.buscarPorNombre("555");
+        var personas = repo.buscarPorNombre("Vla");
 
         /*if (personas != null) {
             for (Persona persona : personas) {
@@ -23,7 +23,7 @@ public class Main {
             System.out.println(persona.nombre() + " " + persona.apellido());
         }
 
-        var optionalPersona = repo.buscarId(789L);
+        var optionalPersona = repo.buscarId(1L);
         /*if (persona != null) {
             System.out.println(persona.nombre() + " " + persona.apellido());
         }*/

@@ -1,8 +1,8 @@
 package oop2.tp3.ejercicio1;
 
-public class LibroInfantil extends Libro{
-    public LibroInfantil(String nombre, int priceCode) {
-        super(nombre, priceCode);
+public class LibroInfantil extends Libro {
+    public LibroInfantil(String nombre) {
+        super(nombre);
     }
 
     @Override

@@ -1,11 +1,11 @@
 package oop2.tp3.ejercicio1;
 
-public class LibroRegular extends Libro{
+public class LibroRegular extends Libro {
 
     public static final double COEFICIENTE_COSTO = 1.5;
 
-    public LibroRegular(String nombre, int priceCode) {
-        super(nombre, priceCode);
+    public LibroRegular(String nombre) {
+        super(nombre);
     }
 
     @Override

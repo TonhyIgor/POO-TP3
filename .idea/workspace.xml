@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2341fa9e-d749-41aa-8440-e32f1bfbb094" name="Changes" comment="mejora GildedRose">
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio2/FuenteDeDatos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio2/LectorCSV.java" afterDir="false" />
+    <list default="true" id="2341fa9e-d749-41aa-8440-e32f1bfbb094" name="Changes" comment="refactor ejercicio 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio2/Recaudacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio2/Recaudacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mem.log" beforeDir="false" afterPath="$PROJECT_DIR$/mem.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mem.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mem.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mem.script" beforeDir="false" afterPath="$PROJECT_DIR$/mem.script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/Alquiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/CopiaLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/CopiaLibro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroInfantil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroInfantil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroNuevoLanzamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroNuevoLanzamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroRegular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio1/LibroRegular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/Gasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/Gasto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoAlquilerAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoAlquilerAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoCena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoCena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoDesayuno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio3/GastoDesayuno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio4/PersonaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio4/PersonaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio2/RecaudacionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio2/RecaudacionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio1/Ejercicio1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio1/Ejercicio1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio3/Ejercicio3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oop2/tp3/ejercicio3/Ejercicio3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +105,36 @@
       <recent name="oop2.tp3.ejercicio1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RecaudacionTest">
+  <component name="RunManager" selected="JUnit.Ejercicio5Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop2.tp3.ejercicio4.Main" />
+      <module name="oop2-refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop2.tp3.ejercicio4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio1Test.calcularCostoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop2-refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop2.tp3.ejercicio1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oop2.tp3.ejercicio1" />
+      <option name="MAIN_CLASS_NAME" value="oop2.tp3.ejercicio1.Ejercicio1Test" />
+      <option name="METHOD_NAME" value="calcularCostoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ejercicio5Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop2-refactoring" />
       <extension name="coverage">
@@ -105,37 +146,6 @@
       <option name="PACKAGE_NAME" value="oop2.tp3.ejercicio5" />
       <option name="MAIN_CLASS_NAME" value="oop2.tp3.ejercicio5.Ejercicio5Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GildedRoseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop2-refactoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oop2.tp3.gildedrose.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oop2.tp3.gildedrose" />
-      <option name="MAIN_CLASS_NAME" value="oop2.tp3.gildedrose.GildedRoseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GildedRoseTest.testAgredBrie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop2-refactoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oop2.tp3.gildedrose.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oop2.tp3.gildedrose" />
-      <option name="MAIN_CLASS_NAME" value="oop2.tp3.gildedrose.GildedRoseTest" />
-      <option name="METHOD_NAME" value="testAgredBrie" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Ejercicio5Test" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Ejercicio1Test.calcularCostoTest" />
         <item itemvalue="JUnit.RecaudacionTest" />
         <item itemvalue="JUnit.RecaudacionTest.testWhereGivenCompany" />
-        <item itemvalue="JUnit.GildedRoseTest" />
-        <item itemvalue="JUnit.GildedRoseTest.testAgredBrie" />
-        <item itemvalue="JUnit.Ejercicio5Test" />
       </list>
     </recent_temporary>
   </component>
@@ -214,14 +224,34 @@
       <option name="project" value="LOCAL" />
       <updated>1747240434346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor ejercicio 2">
+      <option name="closed" value="true" />
+      <created>1747455177195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747455177195</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit" />
     <MESSAGE value="ejercicio GildedRose" />
     <MESSAGE value="mejora GildedRose" />
-    <option name="LAST_COMMIT_MESSAGE" value="mejora GildedRose" />
+    <MESSAGE value="refactor ejercicio 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor ejercicio 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/oop2/tp3/ejercicio4/Main.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/POO_TP3$GildedRoseTest.ic" NAME="GildedRoseTest Coverage Results" MODIFIED="1747240407406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

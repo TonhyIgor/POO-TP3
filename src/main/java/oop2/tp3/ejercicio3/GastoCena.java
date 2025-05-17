@@ -1,8 +1,13 @@
 package oop2.tp3.ejercicio3;
 
 public class GastoCena extends Gasto {
-    public GastoCena(String nombre, int monto) {
-        super(nombre, monto);
+    public GastoCena(int monto) {
+        super(monto);
+    }
+
+    @Override
+    String determinarTipoGasto() {
+        return "CENA";
     }
 
     @Override

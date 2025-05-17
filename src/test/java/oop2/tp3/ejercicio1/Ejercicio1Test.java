@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Ejercicio1Test {
     @Test
-    void calcularCostoTest(){
-        Libro elTunel = new LibroRegular("El Túnel", Libro.REGULARES);
-        Libro antesDelFin = new LibroRegular("Antes del Fin", Libro.REGULARES);
+    void calcularCostoTest() {
+        var elTunel = new LibroRegular("El Túnel");
+        var antesDelFin = new LibroRegular("Antes del Fin");
 
         CopiaLibro elTunelCopia = new CopiaLibro(elTunel);
         CopiaLibro antesDelFinCopia = new CopiaLibro(antesDelFin);

@@ -5,15 +5,9 @@ public abstract class Libro {
     public static final int REGULARES = 0;
     public static final int NUEVO_LANZAMIENTO = 1;
     private String nombre;
-    private int codigoPrecio;
 
-    public Libro(String nombre, int priceCode) {
+    public Libro(String nombre) {
         this.nombre = nombre;
-        this.codigoPrecio = priceCode;
-    }
-
-    public int codigoPrecio() {
-        return codigoPrecio;
     }
 
     public String nombre() {

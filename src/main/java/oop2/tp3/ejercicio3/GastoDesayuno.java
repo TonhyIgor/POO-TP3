@@ -1,8 +1,13 @@
 package oop2.tp3.ejercicio3;
 
 public class GastoDesayuno extends Gasto {
-    public GastoDesayuno(String nombre, int monto) {
-        super(nombre, monto);
+    public GastoDesayuno(int monto) {
+        super(monto);
+    }
+
+    @Override
+    String determinarTipoGasto() {
+        return "DESAYUNO";
     }
 
     @Override
